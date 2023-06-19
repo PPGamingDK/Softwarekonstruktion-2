@@ -1,0 +1,108 @@
+﻿<Window x:Class="Ekssammen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ekssammen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="800">
+    <Grid>
+        <Label HorizontalAlignment="Left" Margin="20,18,0,0" Height="170" Width="503" VerticalAlignment="Top" Background="#FFD5EBFF"/>
+        <Label Content="Container&#xD;&#xA;" HorizontalAlignment="Left" Height="28" Margin="20,18,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="btn_CtnEdit" Content="Rediger" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="25,63,0,0" Click="btn_CtnEdit_Click"/>
+        <Button x:Name="btn_CtnDelete" Content="Slet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="25,93,0,0" Click="btn_CtnDelete_Click"/>
+        <Button x:Name="btn_CtnSave" Content="Gem" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="25,124,0,0" Click="btn_CtnSave_Click"/>
+        <DataGrid x:Name="DG_Container" HorizontalAlignment="Left" Height="130" Margin="160,46,0,0" VerticalAlignment="Top" Width="319" AutoGenerateColumns="False" SelectionChanged="DG_Container_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn 
+                    Binding="{Binding Id}"
+                    Header="Id"
+                    MinWidth="50" 
+                    IsReadOnly="True" />
+                <DataGridTextColumn 
+                    Binding="{Binding Weight}"
+                    Header="Vægt"
+                    MinWidth="50" 
+                    IsReadOnly="True" />
+                <DataGridTextColumn 
+                    Binding="{Binding Airport}"
+                    Header="Airport"
+                    MinWidth="80" 
+                    IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <TextBox x:Name="tb_CtnId" IsReadOnly="True" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="36" Margin="160,18,0,0" Background="#FFBDBABA"/>
+        <TextBox x:Name="tb_CtnWeigt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="69" Margin="201,18,0,0" Background="White"/>
+        <TextBox x:Name="tb_CtnAirport" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="83" Margin="275,18,0,0" Background="White"/>
+
+
+
+        <Label HorizontalAlignment="Left" Margin="20,213,0,0" Height="170" Width="503" VerticalAlignment="Top" Background="#FFD5EBFF"/>
+        <Label Content="Fly" HorizontalAlignment="Left" Height="28" Margin="20,213,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="btn_FlyEdit" Content="Rediger" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="25,258,0,0" Click="btn_FlyEdit_Click"/>
+        <Button x:Name="btn_FlyDelete" Content="Slet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="25,288,0,0" Click="btn_FlyDelete_Click"/>
+        <Button x:Name="btn_FlySave" Content="Gem" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="25,319,0,0" Click="btn_FlySave_Click"/>
+        <DataGrid x:Name="DG_Plane" HorizontalAlignment="Left" Height="130" Margin="160,241,0,0" VerticalAlignment="Top" Width="319" AutoGenerateColumns="False" SelectionChanged="DG_Plane_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn 
+                    Binding="{Binding Id}"
+                    Header="Id"
+                    MinWidth="50" 
+                    IsReadOnly="True" />
+                <DataGridTextColumn 
+                    Binding="{Binding MaxWeight}"
+                    Header="Kapacitet"
+                    MinWidth="50" 
+                    IsReadOnly="True" />
+                <DataGridTextColumn 
+                    Binding="{Binding Registration}"
+                    Header="RegNummer"
+                    MinWidth="50" 
+                    IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="tb_FlyId" IsReadOnly="True" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="36" Margin="160,213,0,0" Background="#FFBDBABA"/>
+        <TextBox x:Name="tb_FlyWeight" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="69" Margin="201,213,0,0" Background="White"/>
+        <TextBox x:Name="tb_FlyRegistration" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="275,213,448,0" Background="White"/>
+
+
+
+        <Label HorizontalAlignment="Left" Margin="20,413,0,0" Height="170" Width="503" VerticalAlignment="Top" Background="#FFD5EBFF"/>
+        <Label Content="Transport" HorizontalAlignment="Left" Height="28" Margin="20,413,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="btn_TransEdit" Content="Rediger" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="25,458,0,0" Click="btn_TransEdit_Click"/>
+        <Button x:Name="btn_TransDelete" Content="Slet" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="25,488,0,0" Click="btn_TransDelete_Click"/>
+        <Button x:Name="btn_TransSave" Content="Gem" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="25,519,0,0" Click="btn_TransSave_Click"/>
+        <DataGrid x:Name="DG_Transport" HorizontalAlignment="Left" Height="130" Margin="160,441,0,0" VerticalAlignment="Top" Width="319" AutoGenerateColumns="False" SelectionChanged="DG_Transport_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn 
+                    Binding="{Binding Id}"
+                    Header="Id"
+                    MinWidth="50" 
+                    IsReadOnly="True" />
+                <DataGridTextColumn 
+                    Binding="{Binding Date}"
+                    Header="Dato"
+                    MinWidth="80" 
+                    IsReadOnly="True" />
+                <DataGridTextColumn 
+                    Binding="{Binding Plane.Id}"
+                    Header="FlyId"
+                    MinWidth="50" 
+                    IsReadOnly="True" />
+                <DataGridTextColumn 
+                    Binding="{Binding Containere.Id}"
+                    Header="ContainerId"
+                    MinWidth="50" 
+                    IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="tb_TransId" IsReadOnly="True" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="36" Margin="160,413,0,0" Background="#FFBDBABA"/>
+        <TextBox x:Name="tb_TransDate" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" Margin="213,413,0,0" Background="White"/>
+        <TextBox x:Name="tb_TransFlightId" IsReadOnly="True" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="296,413,455,0" Background="#FFBDBABA"/>
+        <TextBox x:Name="tb_TransContainerId" IsReadOnly="True" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="345,413,388,0" Background="#FFBDBABA"/>
+
+
+
+    </Grid>
+</Window>

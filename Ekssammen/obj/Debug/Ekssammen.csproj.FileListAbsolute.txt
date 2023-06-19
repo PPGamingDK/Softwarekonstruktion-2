@@ -1,0 +1,15 @@
+C:\Users\phil5521\source\repos\Ekssammen\Ekssammen\bin\Debug\Ekssammen.exe.config
+C:\Users\phil5521\source\repos\Ekssammen\Ekssammen\bin\Debug\Ekssammen.exe
+C:\Users\phil5521\source\repos\Ekssammen\Ekssammen\bin\Debug\Ekssammen.pdb
+C:\Users\phil5521\source\repos\Ekssammen\Ekssammen\obj\Debug\Ekssammen.csprojAssemblyReference.cache
+C:\Users\phil5521\source\repos\Ekssammen\Ekssammen\obj\Debug\MainWindow.g.cs
+C:\Users\phil5521\source\repos\Ekssammen\Ekssammen\obj\Debug\App.g.cs
+C:\Users\phil5521\source\repos\Ekssammen\Ekssammen\obj\Debug\Ekssammen_MarkupCompile.cache
+C:\Users\phil5521\source\repos\Ekssammen\Ekssammen\obj\Debug\Ekssammen_MarkupCompile.lref
+C:\Users\phil5521\source\repos\Ekssammen\Ekssammen\obj\Debug\MainWindow.baml
+C:\Users\phil5521\source\repos\Ekssammen\Ekssammen\obj\Debug\Ekssammen.g.resources
+C:\Users\phil5521\source\repos\Ekssammen\Ekssammen\obj\Debug\Ekssammen.Properties.Resources.resources
+C:\Users\phil5521\source\repos\Ekssammen\Ekssammen\obj\Debug\Ekssammen.csproj.GenerateResource.cache
+C:\Users\phil5521\source\repos\Ekssammen\Ekssammen\obj\Debug\Ekssammen.csproj.CoreCompileInputs.cache
+C:\Users\phil5521\source\repos\Ekssammen\Ekssammen\obj\Debug\Ekssammen.exe
+C:\Users\phil5521\source\repos\Ekssammen\Ekssammen\obj\Debug\Ekssammen.pdb
